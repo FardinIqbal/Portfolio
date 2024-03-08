@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fardin Iqbal's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            background: #2F4F4F;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        @media(max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+        }
+        .about, .education, .experience, .projects, .skills {
+            background: #eaeaea;
+            color: #333;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .section-title {
+            color: #333;
+            text-transform: uppercase;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Fardin Iqbal</h1>
+</header>
+<nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+</nav>
+<div class="container">
+    <section id="about" class="about">
+        <h2 class="section-title">About</h2>
+        <p>Web Developer and software engineer with a Bachelor of Science in Computer Science from Stony Brook University. Passionate about leveraging technology to address social injustice and enhance education.</p>
+    </section>
+    <section id="education" class="education">
+        <h2 class="section-title">Education</h2>
+        <p>Stony Brook University, Bachelor of Science in Computer Science</p>
+    </section>
+    <section id="experience" class="experience">
+        <h2 class="section-title">Experience</h2>
+        <p>Significant roles in web development and leadership within organizations such as Finxerunt, the International Socioeconomic Laboratory, and The Hardy Group.</p>
+    </section>
+    <section id="projects" class="projects">
+        <h2 class="section-title">Projects</h2>
+        <ul>
+            <li><a href="https://github.com/FardinIqbal/Portfolio">Portfolio Website</a> - A static website to showcase cloud infrastructure skills with AWS and Terraform.</li>
+            <li><a href="https://github.com/FardinIqbal/Cold-Caller/tree/main">Cold Caller Android App</a> - An app to enhance classroom participation through randomized student selection.</li>
+            <li><a href="https://iqbalf1.itch.io/snowball-fight">Multiplayer Projectile Shooter Game</a> - A Unity and C# based game enhancing online multiplayer engagement.</li>
+        </ul>
+    </section>
+    <section id="skills" class="skills">
+        <h2 class="section-title">Skills</h2>
+        <p>Proficient in Java, C, Python, HTML, CSS, JavaScript, and various technologies such as AWS, Terraform, Android Studio, and Unity.</p>
+    </section>
+</div>
+<footer>
+    <p>Contact: fardin.iqbal@stonybrook.edu | LinkedIn: <a href="https://www.linkedin.com/in/fardin-iqbal-618460187/" style="color: #fff;">Profile</a></p>
+</footer>
+
+<script>
+    // Example of a simple responsive JavaScript functionality
+    window.addEventListener('resize', function() {
+        const nav = document.querySelector('nav');
+        if(window.innerWidth < 600) {
+            nav.style.flexDirection = 'column';
+        } else {
+            nav.style.flexDirection = 'row';
+        }
+    });
+</script>
+</body>
+</html>
+
