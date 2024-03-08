@@ -12,7 +12,7 @@ This project is a personal learning journey into the world of cloud infrastructu
 
 ## Project Status
 
-Currently, the website is in its initial stages, with the primary focus being on the backend infrastructure setup rather than the frontend design. The static website is live but has not been styled yet. Future updates will include CSS styling to improve the visual appeal and user experience of the website.
+Currently, the website is in its initial stages, with the primary focus being on the backend infrastructure setup rather than the frontend design. The static website is deployed and not been styled yet. Future updates will include CSS styling to improve the visual appeal and user experience of the website and then I will deploy the website.
 
 ## Learning Outcomes
 
